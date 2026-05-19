@@ -1,16 +1,13 @@
-import React from 'react'
+import React from "react";
 import Link from "next/link";
-import { ArrowBigLeft, ArrowLeft } from 'lucide-react';
-import {
-  Field,
-  FieldDescription,
-  FieldLabel,
-} from "@/components/ui/field"
-import { Input } from "@/components/ui/input"
+import { ArrowBigLeft, ArrowLeft } from "lucide-react";
+import { Field, FieldDescription, FieldLabel } from "@/components/ui/field";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea"
 export default function Devis() {
   return (
     <>
-      <main className='w-screen h-screen flex bg-sky-700 flex-col justify-center items-center'>
+      <main className="w-full h-screen flex bg-secondary flex-col justify-center items-center">
         {/* <section className='bg-gray-200 py-10'>
             <Link href="/" className='flex'>
             <ArrowLeft/>Back
@@ -35,18 +32,46 @@ export default function Devis() {
             </div>
         </section> */}
 
-        <Field>
-      <FieldLabel htmlFor="input-required">
-        Required Field <span className="text-destructive">*</span>
-      </FieldLabel>
-      <Input
-        id="input-required"
-        placeholder="This field is required"
-        required
-      />
-      <FieldDescription>This field must be filled out.</FieldDescription>
-    </Field>
+        <section className="bg-gray-50 py-10">
+          <Link href="/" className="inline-flex items-center gap-2">
+            <ArrowLeft />
+            Back
+          </Link>
+
+          <div className="grid grid-cols-2 grid-rows-2 items-center px-6 gap-4">
+            <div>
+              <label htmlFor="nom">
+                Nom<span className="text-destructive">*</span>
+              </label>
+              <Input id="nom" placeholder="ex: mark jonhson" required />
+            </div>
+            <div>
+              <label htmlFor="nom">
+                E-mail<span className="text-destructive">*</span>
+              </label>
+              <Input id="nom" placeholder="ex: jonhson@gmail.com" required />
+            </div>
+            <div>
+              <label htmlFor="nom">
+                Telephone<span className="text-destructive">*</span>
+              </label>
+              <Input id="nom" type="number"  placeholder="ex: 690 41 41 41 " required />
+            </div>
+            <div className="flex items-center gap-6">
+              <label htmlFor="msg">message</label>
+              <Textarea
+                name=""
+                placeholder="Rediger votre demande"
+                cols={24}
+                rows={4}
+                
+                className=" outline"
+                id="msg"
+              ></Textarea>
+            </div>
+          </div>
+        </section>
       </main>
     </>
-  )
+  );
 }

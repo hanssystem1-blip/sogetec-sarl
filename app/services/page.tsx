@@ -5,7 +5,7 @@ import { LucideColumnsSettings, ShieldCheck, Signpost, TrafficCone, Zap, Percent
 export default function Services() {
   return (
     <>
-       <section className="w-full px-4 py-10">
+       <section className="w-full px-4 py-10 pt-25 md:py-10">
 
         <div className="mx-auto mb-10 max-w-3xl text-center">
           <h1 className="text-2xl text-sky-700 font-semibold pb-2">

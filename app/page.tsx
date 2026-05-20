@@ -57,7 +57,7 @@ export default function Home() {
     <>
       <main className="flex flex-col items-center justify-center w-full px-4 pt-30 pb-10 text-center bg-green-50 ">
         <div className="w-full max-w-4xl ">
-          <h2 className="text-3xl animate__fadeInDown animate__animated font-bold  leading-tight tracking-tight text-slate-900 md:text-5xl lg:text-6xl mb-6">
+          <h2 className="text-3xl animate__fadeInDown animate__animated font-semibold  leading-tight tracking-tight text-slate-900 md:text-5xl lg:text-6xl mb-6">
             Votre partenaire en électricité et travaux techniques
           </h2>
           <p className="mx-auto animate__fadeIn animate__animated mb-8 max-w-2xl text-base leading-7 text-gray-700 md:text-lg">
@@ -94,7 +94,7 @@ export default function Home() {
                         className="max-h-44 md:max-h-56"
                         alt=""
                       />
-                      <span className="text-xl font-semibold md:text-4xl">
+                      <span className="text-md font-semibold md:text-3xl">
                         Retrouvez vos câbles haut de gamme chez Sogetec
                       </span>
                     </CardContent>
@@ -110,7 +110,7 @@ export default function Home() {
                         className="max-h-44 md:max-h-56"
                         alt=""
                       />
-                      <span className="text-xl font-semibold md:text-4xl">
+                      <span className="text-md font-semibold md:text-3xl">
                         Équipements de protection électriques fiables.
                       </span>
                     </CardContent>
@@ -126,7 +126,7 @@ export default function Home() {
                         className="max-h-44 md:max-h-56"
                         alt=""
                       />
-                      <span className="text-xl font-semibold md:text-4xl">
+                      <span className="text-md font-semibold md:text-3xl">
                         Prises et accessoires adaptés à tous vos besoins.
                       </span>
                     </CardContent>
@@ -142,7 +142,7 @@ export default function Home() {
                         className="max-h-44 md:max-h-56"
                         alt=""
                       />
-                      <span className="text-xl font-semibold md:text-4xl">
+                      <span className="text-md font-semibold md:text-3xl">
                         Solutions de câbles et matériels haut de gamme.
                       </span>
                     </CardContent>
@@ -158,7 +158,7 @@ export default function Home() {
                         className="max-h-44 md:max-h-56"
                         alt=""
                       />
-                      <span className="text-xl font-semibold md:text-4xl">
+                      <span className="text-md font-semibold md:text-3xl">
                         Boîtes et coffrets pour installations robustes.
                       </span>
                     </CardContent>
@@ -174,7 +174,7 @@ export default function Home() {
                         className="max-h-44 md:max-h-56"
                         alt=""
                       />
-                      <span className="text-xl font-semibold md:text-4xl">
+                      <span className="text-md font-semibold md:text-3xl">
                         Câbles et accessoires adaptés aux usages professionnels.
                       </span>
                     </CardContent>
@@ -190,7 +190,7 @@ export default function Home() {
                         className="max-h-44 md:max-h-56"
                         alt=""
                       />
-                      <span className="text-2xl font-semibold md:text-4xl">
+                      <span className="text-md font-semibold md:text-3xl">
                         Multimètres et outils de mesure précis.
                       </span>
                     </CardContent>
@@ -207,11 +207,11 @@ export default function Home() {
       <section className="w-full px-4 py-10">
 
         <div className="mx-auto mb-10 max-w-3xl text-center">
-          <h1 className="text-2xl text-sky-700 font-semibold pb-2">
+          <h1 className="md:text-2xl text-lg text-sky-700 font-semibold pb-2">
             Nos Services
           </h1>
           <span className="mx-auto block h-1 w-20 rounded bg-green-800"></span>
-          <p className="pt-8 text-gray-700">
+          <p className="pt-6 text-md md:text-lg  text-gray-700">
             Solutions électriques fiables et innovantes, adaptées aux besoins
             des particuliers et des entreprises.
           </p>
@@ -290,12 +290,12 @@ export default function Home() {
       {/* section boutique */}
 
       <section className="flex flex-col justify-center  py-10 w-full">
-        <div className="flex flex-col justify-center  items-center ">
-          <h1 className="text-2xl text-sky-700 font-semibold pb-2">
+        <div className="flex flex-col justify-center text-center items-center ">
+          <h1 className="text-lg md:text-2xl  text-sky-700 font-semibold pb-2">
             Explorer Nos equipements et materielles
           </h1>
-          <span className="h-1 w-20 text-center rounded bg-green-800 "></span>
-          <p className="pt-8 text-gray-700">
+          <span className="mx-auto block h-1 w-20 rounded bg-green-800"></span>
+          <p className="pt-6 text-md md:text-lg text-gray-700">
             Des équipements de qualité sélectionnés pour garantir performance,
             fiabilité et durabilité.
           </p>
@@ -373,23 +373,24 @@ export default function Home() {
           </h1>
           <span className="h-1 w-15 md:w-20 text-center rounded bg-green-800 "></span>
         </div>
-        <div className="grid grid-cols-2 flex-wrap p-6 gap-8 grid-rows-2">
+        <div className="grid md:grid-cols-2 flex-wrap p-6 gap-8 grid-rows-2">
           <div className="bg-secondary rounded-md hover:transform hover:scale-101 duration-200 p-6 ">
-            <div className="flex gap-4 text-balance md:text-xs  ">
+            <div className="flex gap-4 text-sm md:text  ">
               <div>
                 <img src="avis.png" width={60} height={60} alt="" className="rounded-full" />
               </div>
-              <div>
+              <div className="">
                 <h1>Andrew Johnson</h1>
                 <p>DG Simtech 3D</p>
               </div>
-            </div>
-            <div className="flex flex-col gap-4 mt-4 ">
               <div className="flex gap-1">
                 <Star className="text-yellow-400 " />
                 <Star className="text-yellow-400 " />
                 <Star className="text-yellow-400 " />
               </div>
+            </div>
+            <div className="flex flex-col gap-4 mt-4 ">
+              
               <CardDescription>
                 “Une équipe très professionnelle !” Sogetec a réalisé notre
                 installation électrique avec rigueur et efficacité. Le travail
@@ -398,7 +399,7 @@ export default function Home() {
             </div>
           </div>
           <div className="bg-secondary rounded-md hover:transform hover:scale-101 duration-200 p-6 ">
-            <div className="flex gap-4">
+            <div className="flex gap-4 text-sm md:text ">
               <div>
                 <img src="avis2.png"  alt="" className="rounded-full w-15 max-h-15" />
               </div>
@@ -406,14 +407,15 @@ export default function Home() {
                 <h1>Andrew Johnson</h1>
                 <p>DG Simtech 3D</p>
               </div>
-            </div>
-            <div className="flex flex-col gap-4 mt-4 ">
               <div className="flex gap-1">
                 <Star className="text-yellow-400 " />
                 <Star className="text-yellow-400 " />
                 <Star className="text-yellow-400 " />
                 <StarHalf className="text-yellow-400 " />
               </div>
+            </div>
+            <div className="flex flex-col gap-4 mt-4 ">
+              
               <CardDescription>
                 “Un partenaire de confiance” Sogetec nous accompagne depuis
                 plusieurs projets. Toujours disponibles, sérieux et à l’écoute
@@ -422,7 +424,7 @@ export default function Home() {
             </div>
           </div>
           <div className="bg-secondary rounded-md hover:transform hover:scale-101 duration-200 p-6 ">
-            <div className="flex gap-4">
+            <div className="flex gap-4 text-sm md:text ">
               <div>
                 <img src="avis3.png" width={60} height={60} alt="" className="rounded-full" />
               </div>
@@ -430,13 +432,14 @@ export default function Home() {
                 <h1>Andrew Johnson</h1>
                 <p>DG Simtech 3D</p>
               </div>
-            </div>
-            <div className="flex flex-col gap-4 mt-4 ">
-              <div className="flex gap-1">
+               <div className="flex gap-1">
                 <Star className="text-yellow-400 " />
                 <Star className="text-yellow-400 " />
                 <StarHalf className="text-yellow-400 " />
               </div>
+            </div>
+            <div className="flex flex-col gap-4 mt-4 ">
+             
               <CardDescription>
                 “Très bonne expertise technique” Leur maîtrise des systèmes
                 électriques et industriels nous a permis d’optimiser nos
@@ -445,7 +448,7 @@ export default function Home() {
             </div>
           </div>
           <div className="bg-secondary rounded-md hover:transform hover:scale-101 duration-200 p-6 ">
-            <div className="flex gap-4">
+            <div className="flex gap-4 text-sm md:text ">
               <div>
                 <img src="avis4.png"  alt="" className="rounded-full w-15 max-h-15" />
               </div>
@@ -453,8 +456,6 @@ export default function Home() {
                 <h1>Andrew Johnson</h1>
                 <p>DG Simtech 3D</p>
               </div>
-            </div>
-            <div className="flex flex-col gap-4 mt-4 ">
               <div className="flex gap-1">
                 <Star className="text-yellow-400 " />
                 <Star className="text-yellow-400 " />
@@ -462,6 +463,9 @@ export default function Home() {
                 <Star className="text-yellow-400 " />
                 <Star className="text-yellow-400 " />
               </div>
+            </div>
+            <div className="flex flex-col gap-4 mt-4 ">
+              
               <CardDescription>
                 “Service rapide et fiable” Nous avons fait appel à Sogetec pour
                 un dépannage urgent, et l’intervention a été rapide avec un
@@ -473,9 +477,9 @@ export default function Home() {
       </section>
       {/* notre localisation */}
 
-      <section className="bg-green-50 p-10 flex flex-col gap-4">
-        <div className="flex flex-col justify-center px-10  ">
-          <h1 className="text-2xl text-sky-700 font-semibold pb-2">
+      <section className="bg-green-50 py-10 flex flex-col gap-4">
+        <div className="flex  flex-col  px-10 ">
+          <h1 className="text-md  md:text-2xl text-sky-700 font-semibold pb-2">
             Localisez-Nous
           </h1>
           <span className="h-1 w-20 text-center rounded bg-green-800 "></span>
@@ -485,35 +489,35 @@ export default function Home() {
         </div>
         </section>
       {/* partenaire de confiance */}
-      <section className="bg-green-50 p-10">
-        <div className="flex flex-col justify-center px-10  ">
-          <h1 className="text-2xl text-sky-700 font-semibold pb-2">
+      <section className="bg-green-50 py-10">
+        <div className="flex flex-col justify-center  px-10  ">
+          <h1 className="text-md md:text-2xl text-sky-700 font-semibold pb-2">
             Nos Partenaires
           </h1>
-          <span className="h-1 w-20 text-center rounded bg-green-800 "></span>
+          <span className="h-1 w-20 text-center rounded bg-green-800 mb-4 "></span>
           <p>Toujours en collaboration avec ses partenaires europeens pour vous garantir des equipements de qualité</p>
         </div>
         <div className="flex flex-wrap items-center justify-center gap-8 mt-10">
           <div
             className="hover:transform hover:scale-108   duration-100 ease-in"
           >
-            <img src="philips.png" className="w-35 h-20" alt="Sogetec Logo" />
+            <img src="philips.png" className="md:w-35 w-25 h-15 md:h-20" alt="Sogetec Logo" />
           </div>
           <div
             className="hover:transform hover:scale-108   duration-100 ease-in"
           >
-            <img src="mazda.png" className="w-35 h-20" alt="Sogetec Logo" />
+            <img src="mazda.png" className="md:w-35 w-25 h-15 md:h-20" alt="Sogetec Logo" />
           </div>
           <div
             className="hover:transform hover:scale-108   duration-100 ease-in"
           >
-            <img src="tree_m.png" className="w-35 h-20" alt="Sogetec Logo" />
+            <img src="tree_m.png" className="md:w-35 w-25 h-15 md:h-20" alt="Sogetec Logo" />
           </div>
           <div className="hover:transform hover:scale-108   duration-100 ease-in">
-            <img src="pirelli.png" className="w-35 h-20" alt="Sogetec Logo" />
+            <img src="pirelli.png" className="md:w-35 w-25 h-15 md:h-20" alt="Sogetec Logo" />
           </div>
           <div className="hover:transform hover:scale-108   duration-100 ease-in">
-            <img src="legrand.png" className="w-30 h-30 " alt="Sogetec Logo" />
+            <img src="legrand.png" className="md:w-35 w-25 h-15 md:h-20" alt="Sogetec Logo" />
           </div>
         </div>
       </section>

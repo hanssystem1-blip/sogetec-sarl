@@ -67,7 +67,7 @@ export default function Home() {
           </p>
 
           <div className="flex flex-col items-center animate__fadeInUp animate__animated justify-center gap-4 sm:flex-row">
-            <Link className="w-full sm:w-auto" href= "https://wa.link/vthve5" >
+            <Link className="w-full sm:w-auto" href= "https://wa.link/6n5v4u" >
               <Button className="w-full md:w-auto bg-sky-700">
               Nous contacter
             </Button>

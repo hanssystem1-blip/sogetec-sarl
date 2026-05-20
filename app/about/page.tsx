@@ -57,10 +57,12 @@ export default function About() {
             </p>
           </div>
         </div>
-        <div className="mt-10 flex justify-center">
-          <Button className=" animate__animated animate__pulse w-xs duration-initial animate__duration-infinite p-4 rounded-2xl bg-sky-600 text-xl hover:bg-sky-700">
-            Contactez-Nous
-          </Button>
+        <div className="mt-10 flex w-full justify-center">
+          <Link className="w-full sm:w-auto" href= "https://wa.link/6n5v4u" >
+              <Button className="w-70  bg-sky-700">
+              Nous contacter
+            </Button>
+            </Link>
         </div>
       </section>
     </>
